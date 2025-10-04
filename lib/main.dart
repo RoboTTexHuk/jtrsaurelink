@@ -599,9 +599,13 @@ class _SimpleWebScreenState extends State<SimpleWebScreen> {
                   handlerName: 'onServerResponse',
                   callback: (args) {
                     try {
+
+                      print("loadr"+ args[0]['savedata'].toString());
                       if (args.isNotEmpty &&
                           args[0] is Map &&
                           args[0]['savedata'].toString() == "false") {
+
+                        print("loadr"+ args[0]['savedata'].toString());
 
                       }
                     } catch (_) {}
